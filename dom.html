@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Manipulation</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="jquery.js"></script>
+  <style>
+    * {
+      margin: 0;
+    }
+
+    body {
+      padding: 20px;
+    }
+
+    div:not(div > div) {
+      margin-bottom: 48px;
+    }
+
+    .dom *:not(a),
+    dom {
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>jQuery DOM Manipulation</h2>
+  <p>source: w3school</p>
+  <br>
+  <div class="get dom">
+    <div class="get-button" style="background-color:cadetblue">jQuery GET</div>
+    <div class="get-content" style="background-color: beige; display: none;">
+      <p>Name: <input type="text" id="get-name" value="" placeholder="Fill you name here..."><a id="get-value"
+          href="#">Click Me!</a></p>
+      <p id="a">This is A paragraph. Please click <a id="a-text" href="#">Text Alert</a> or another <a id="a-html"
+          href="#">HTML
+          Alert</a>.</p>
+      <p id="b">This is B paragraph. Please click <a id="b-text" href="#">Text Alert</a> or another <a id="b-html"
+          href="#">HTML
+          Alert</a>.</p>
+      <p id="c">This is C paragraph. Please click <a id="c-text" href="#">Text Alert</a> or another <a id="c-html"
+          href="#">HTML
+          Alert</a>.</p>
+    </div>
+  </div>
+
+  <div class="set dom">
+    <div class="set-button" style="background-color:pink">jQuery SET</div>
+    <div class="set-content" style="background-color: beige; display: none;">
+      <p>Name: <input type="text" id="set-name" value="" placeholder="Fill you name here..."><a id="set-value"
+          href="#">Click to set!</a></p>
+      <p id="a-set">This is A paragraph. Please click <a id="a-click" href="#">Click to change</a></p>
+      <p id="b-set">This is B paragraph. Please click <a id="b-click" href="#">Click to change</a></p>
+    </div>
+  </div>
+
+</body>
+
+</html>

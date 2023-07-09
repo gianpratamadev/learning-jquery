@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Effects</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
   <script src="jquery.js"></script>
   <style>
@@ -16,13 +16,8 @@
       padding: 20px;
     }
 
-    div:not(div > div) {
-      margin-bottom: 48px;
-    }
-
-    .effect *:not(a),
-    effect {
-      padding: 20px;
+    li {
+      margin-bottom: 16px;
     }
   </style>
 </head>
@@ -31,39 +26,13 @@
   <h2>jQuery Learning</h2>
   <p>source: w3school</p>
   <br>
-  <div class="hideshow effect">
-    <div class="hideshow-button" style="background-color:darksalmon">Hide/Show Effect</div>
-    <div class="hideshow-content" style="background-color: beige; display: none;">
-      <p id="a">This is A paragraph with <a href="#">Link 1</a>.</p>
-      <p id="b">This is B paragraph with <a href="#">Link 2</a>.</p>
-      <p id="c">This is C paragraph with <a href="#">Link 2</a>.</p>
-    </div>
-  </div>
-  <div class="fading effect">
-    <div class="fading-button" style="background-color:dodgerblue">Fading Effect</div>
-    <div class="fading-content" style="background-color: beige; display: none;">
-      <p id="a">This is A paragraph with <a href="#">Link 1</a>.</p>
-      <p id="b">This is B paragraph with <a href="#">Link 2</a>.</p>
-      <p id="c">This is C paragraph with <a href="#">Link 2</a>.</p>
-    </div>
-  </div>
-
-  <div class="sliding effect">
-    <div class="slide-button" style="background-color:hotpink">Sliding Effect</div>
-    <div class="slide-content" style="background-color: beige; display: none;">
-      <p id="a">This is A paragraph with <a href="#">Link 1</a>.</p>
-      <p id="b">This is B paragraph with <a href="#">Link 2</a>.</p>
-      <p id="c">This is C paragraph with <a href="#">Link 2</a>.</p>
-    </div>
-  </div>
-
-  <div class="animation effect">
-    <div class="animation-button" style="background-color:aquamarine">Animation Effect</div>
-    <div class="animation-content" style="background-color: beige;">
-      <div class="animation-box" style="width: 80px; height: 80px; background-color: coral; position: relative"></div>
-    </div>
-  </div>
-
+  <ul>
+    <li>This is <a href="effects.html"> link </a>to jQuery Effects</li>
+    <li>This is <a href="dom.html"> link </a>to jQuery DOM Manipulation</li>
+    <li>This is <a href="dom.html"> link </a>to jQuery Traversing</li>
+    <li>This is <a href="dom.html"> link </a>to jQuery AJAX</li>
+    <li>This is <a href="dom.html"> link </a>to jQuery MISC</li>
+  </ul>
 
 </body>
 
