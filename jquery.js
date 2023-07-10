@@ -89,4 +89,38 @@ $(() => {
   $("#b-set").on("click", () => {
     $("#b-set").html("<b>Whooa.. this is changed too!</b>");
   });
+
+  // ADD
+  // Append & prepend
+  $(".append-button").on("click", () => {
+    $(".append-content").toggle();
+  });
+
+  $("#append-click").on("click", () => {
+    $("#a-append").append("<b>This is Appended!</b>");
+    $("#a-append").prepend("<b>This is Prepend!</b>");
+  });
+
+  // After & Before
+  $(".afterbefore-button").on("click", () => {
+    $(".afterbefore-content").toggle();
+  });
+
+  $("#afterbefore-click").on("click", () => {
+    $("#a-afterbefore").after("<b>Here is After!</b>");
+    $("#a-afterbefore").before("<b>Here is Before!</b>");
+  });
+
+  // Remove
+  $(".remove-button").on("click", () => {
+    $(".remove-content").toggle();
+  });
+
+  $("#remove-click").on("click", () => {
+    $("#remove-paragraph").remove();
+  });
+
+  $("#empty-click").on("click", () => {
+    $("#remove-paragraph").empty();
+  });
 });
