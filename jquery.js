@@ -123,4 +123,26 @@ $(() => {
   $("#empty-click").on("click", () => {
     $("#remove-paragraph").empty();
   });
+
+  // Add/Remove Class
+  $(".addclass-button").on("click", () => {
+    $(".addremove-content").toggle();
+  });
+
+  $("#addclass-click").on("click", () => {
+    $(".addremove-content > p").addClass("blue-text");
+  });
+
+  $("#removeclass-click").on("click", () => {
+    $(".addremove-content > span").removeClass("blue-text");
+  });
+
+  // CSS Method
+  $(".css-button").on("click", () => {
+    $(".css-content").toggle();
+  });
+
+  $("#css-click").on("click", () => {
+    $(".css-content > p").css({ color: "red", "font-size": "36px" });
+  });
 });

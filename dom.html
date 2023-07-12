@@ -24,6 +24,12 @@
     dom {
       padding: 20px;
     }
+
+    .blue-text {
+      color: rgb(63, 63, 255);
+      font-size: xx-large;
+      font-weight: bold;
+    }
   </style>
 </head>
 
@@ -85,6 +91,32 @@
       <p>Remove only the child</p><a id="empty-click" href="#">Click to empty</a>
     </div>
   </div>
+
+  <div class="addclass dom">
+    <div class="addclass-button" style="background-color:bisque">jQuery Add/Remove Class</div>
+    <div class="addremove-content" style="background-color: beige; display: none;">
+      <p>This is A paragraph.</p>
+      <span class="blue-text">This is A span.</span>
+      <br>
+      <br>
+      <br>
+      <a id="addclass-click" href="#">Click to add class to "p"</a>
+      <br>
+      <br>
+      <a id="removeclass-click" href="#">Click to remove class to "span"</a>
+    </div>
+  </div>
+
+  <div class="css dom">
+    <div class="css-button" style="background-color:darkkhaki">jQuery CSS</div>
+    <div class="css-content" style="background-color: beige; display: none;">
+      <p>This is A paragraph.</p>
+      <br>
+      <br>
+      <a id="css-click" href="#">Click to add style at "p"</a>
+    </div>
+  </div>
+
 
 </body>
 
